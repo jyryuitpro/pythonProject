@@ -11,3 +11,7 @@ def insertion_sort(data_list):
 
 data_list = random.sample(range(100), 50)
 print (insertion_sort(data_list))
+
+
+for index in range(2, 0, -1):
+    print(index)
