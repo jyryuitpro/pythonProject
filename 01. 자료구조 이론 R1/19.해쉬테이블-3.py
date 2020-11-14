@@ -1,4 +1,4 @@
-#
+# Chaining 기법
 hash_table = list([0 for i in range(8)])
 # [0, 0, 0, 0, 0, 0, 0, 0]
 print(hash_table)
@@ -25,7 +25,7 @@ def save_data(data, value):
                 return
         hash_table[hash_address].append([index_key, value])
     else:
-        hash_table[hash_address] = list([index_key, value])
+        hash_table[hash_address] = [[index_key, value]]
 
 def read_data(data):
     index_key = get_key(data)
